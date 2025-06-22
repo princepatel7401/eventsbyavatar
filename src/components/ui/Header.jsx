@@ -1,8 +1,6 @@
 // /home/ubuntu/app/eventcraft_ahmedabad/src/components/ui/Header.jsx
 import React, { useState, useEffect } from "react";
 import Icon from "../AppIcon";
-import AvatarLogo from "../../../public/assets/Avatar_Logo.png";
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
@@ -78,7 +76,7 @@ const Header = () => {
               >
                 <div className="w-24 sm:w-32 p-2">
                   <img
-                    src={AvatarLogo}
+                    src="/assets/images/Avatar_Logo.png"
                     alt="Business Logo"
                     className="w-full h-auto object-contain"
                   />
@@ -142,7 +140,7 @@ const Header = () => {
               <div className="flex items-center space-x-2">
                 <div className="w-24 sm:w-32 p-2">
                   <img
-                    src={AvatarLogo}
+                    src="/assets/images/Avatar_Logo.png"
                     alt="Business Logo"
                     className="w-full h-auto object-contain"
                   />
@@ -200,7 +198,7 @@ const Header = () => {
                     <span className="text-sm">Call Now</span>
                   </a>
                   <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/9193"
                     className="flex items-center space-x-2 text-text-secondary hover:text-success transition-colors duration-200 p-2"
                   >
                     <Icon
