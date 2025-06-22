@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #6b46c1; /* Brand authority + premium positioning - violet-700 */
+    --color-primary-50: #f3f4f6; /* Lightest primary shade - violet-50 */
+    --color-primary-100: #e5e7eb; /* Light primary shade - violet-100 */
+    --color-primary-200: #d1d5db; /* Medium light primary shade - violet-200 */
+    --color-primary-500: #8b5cf6; /* Medium primary shade - violet-500 */
+    --color-primary-600: #7c3aed; /* Medium dark primary shade - violet-600 */
+    --color-primary-800: #5b21b6; /* Dark primary shade - violet-800 */
+    --color-primary-900: #4c1d95; /* Darkest primary shade - violet-900 */
+
+    /* Secondary Colors */
+    --color-secondary: #8b5cf6; /* Supporting hierarchy without competition - violet-500 */
+    --color-secondary-100: #ddd6fe; /* Light secondary shade - violet-200 */
+    --color-secondary-200: #c4b5fd; /* Medium light secondary shade - violet-300 */
+    --color-secondary-500: #8b5cf6; /* Medium secondary shade - violet-500 */
+    --color-secondary-600: #7c3aed; /* Medium dark secondary shade - violet-600 */
+
+    /* Accent Colors */
+    --color-accent: #f59e0b; /* CTA power + urgency moments only - amber-500 */
+    --color-accent-100: #fef3c7; /* Light accent shade - amber-100 */
+    --color-accent-200: #fde68a; /* Medium light accent shade - amber-200 */
+    --color-accent-500: #f59e0b; /* Medium accent shade - amber-500 */
+    --color-accent-600: #d97706; /* Medium dark accent shade - amber-600 */
+    --color-accent-700: #b45309; /* Dark accent shade - amber-700 */
+
+    /* Background Colors */
+    --color-background: #ffffff; /* Clean canvas for content focus - white */
+    --color-surface: #f8fafc; /* Subtle section separation - slate-50 */
+    --color-surface-100: #f1f5f9; /* Light surface shade - slate-100 */
+    --color-surface-200: #e2e8f0; /* Medium surface shade - slate-200 */
+
+    /* Text Colors */
+    --color-text-primary: #1f2937; /* Maximum contrast for scanning - gray-800 */
+    --color-text-secondary: #6b7280; /* Supporting without distraction - gray-500 */
+    --color-text-muted: #9ca3af; /* Muted text - gray-400 */
+
+    /* Status Colors */
+    --color-success: #10b981; /* Positive reinforcement for testimonials - emerald-500 */
+    --color-success-100: #d1fae5; /* Light success shade - emerald-100 */
+    --color-success-600: #059669; /* Dark success shade - emerald-600 */
+
+    --color-warning: #f59e0b; /* Scarcity messaging when needed - amber-500 */
+    --color-warning-100: #fef3c7; /* Light warning shade - amber-100 */
+    --color-warning-600: #d97706; /* Dark warning shade - amber-600 */
+
+    --color-error: #ef4444; /* Form validation feedback only - red-500 */
+    --color-error-100: #fee2e2; /* Light error shade - red-100 */
+    --color-error-600: #dc2626; /* Dark error shade - red-600 */
+
+    /* Border Colors */
+    --color-border: #e5e7eb; /* Default border - gray-200 */
+    --color-border-focus: #f59e0b; /* Active form states - amber-500 */
+
+    /* Shadow Colors */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: #3a7122;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem; /* py-3 px-6 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn-primary:hover {
+    background-color: #335f1d; /* darker version of #3a7122 */
+  }
+
+  .btn-secondary {
+    @apply bg-primary text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-primary-600 transition-all duration-200 ease-in-out;
+  }
+
+  .btn-outline {
+    @apply bg-transparent border-2 border-current font-semibold py-3 px-6 rounded-lg transition-all duration-200 ease-in-out;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-accent-600 transition-all duration-200 ease-in-out;
+  }
+
+  .form-input {
+    @apply border border-border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-all duration-200;
+  }
+
+  .nav-link {
+    @apply text-text-primary hover:text-primary transition-colors duration-200 ease-in-out;
+  }
+
+  .nav-link-active {
+    @apply text-primary font-medium;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .text-display-1 {
+    @apply text-4xl sm:text-5xl md:text-6xl font-display font-bold leading-tight;
+  }
+
+  .text-display-2 {
+    @apply text-3xl sm:text-4xl md:text-5xl font-display font-bold leading-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--color-primary),
+      var(--color-accent)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .shadow-custom {
+    box-shadow: var(--shadow-md);
+  }
+
+  .shadow-custom-lg {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .shadow-custom-xl {
+    box-shadow: var(--shadow-xl);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 300ms ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 300ms ease-in-out;
+  }
+
+  .animate-slide-down {
+    animation: slideDown 300ms ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
