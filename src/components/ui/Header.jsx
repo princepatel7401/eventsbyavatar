@@ -1,6 +1,7 @@
 // /home/ubuntu/app/eventcraft_ahmedabad/src/components/ui/Header.jsx
 import React, { useState, useEffect } from "react";
 import Icon from "../AppIcon";
+import AvatarLogo from "../../../public/assets/Avatar_Logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -77,7 +78,7 @@ const Header = () => {
               >
                 <div className="w-24 sm:w-32 p-2">
                   <img
-                    src="public/assets/images/Avatar_Logo.png"
+                    src={AvatarLogo}
                     alt="Business Logo"
                     className="w-full h-auto object-contain"
                   />
@@ -141,7 +142,7 @@ const Header = () => {
               <div className="flex items-center space-x-2">
                 <div className="w-24 sm:w-32 p-2">
                   <img
-                    src="public/assets/images/Avatar_Logo.png"
+                    src={AvatarLogo}
                     alt="Business Logo"
                     className="w-full h-auto object-contain"
                   />
