@@ -201,12 +201,12 @@ const TestimonialsSection = () => {
                       {currentData.eventDetails.guests}
                     </p>
                   </div>
-                  <div>
+                  {/* <div>
                     <p className="text-sm text-text-secondary">Budget</p>
                     <p className="font-semibold text-text-primary">
                       {currentData.eventDetails.budget}
                     </p>
-                  </div>
+                  </div> */}
                   <div>
                     <p className="text-sm text-text-secondary">Satisfaction</p>
                     <p className="font-semibold text-success">
@@ -350,7 +350,7 @@ const TestimonialsSection = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <div className="bg-accent-100 rounded-2xl p-8 max-w-2xl mx-auto border border-accent-200">
+          <div className="bg-primary-100 rounded-2xl p-8 max-w-2xl mx-auto border border-primary-200">
             <h3 className="text-2xl font-display font-bold text-text-primary mb-4">
               Ready to Join Our Success Stories?
             </h3>

@@ -155,7 +155,7 @@ const EventTypesSection = () => {
               {/* Key Info */}
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 <div className="bg-white p-3 sm:p-4 rounded-lg border border-border">
-                  <div className="flex items-center mb-1 sm:mb-2">
+                  {/* <div className="flex items-center mb-1 sm:mb-2">
                     <Icon
                       name="DollarSign"
                       size={16}
@@ -164,7 +164,7 @@ const EventTypesSection = () => {
                     <span className="font-semibold text-text-primary text-sm sm:text-base">
                       Budget Range
                     </span>
-                  </div>
+                  </div> */}
                   <p className="text-base sm:text-lg font-bold text-primary">
                     {eventTypes[selectedType].budgetRange}
                   </p>
@@ -244,7 +244,7 @@ const EventTypesSection = () => {
               </div>
 
               {/* CTA */}
-              <div className="bg-accent-100 rounded-lg sm:rounded-xl p-4 sm:p-6 text-center border border-accent-200">
+              <div className="bg-primary-100 rounded-lg sm:rounded-xl p-4 sm:p-6 text-center border border-primary-200">
                 <h5 className="text-base sm:text-lg font-semibold text-text-primary mb-1 sm:mb-2">
                   Ready to transform your{" "}
                   {eventTypes[selectedType].title.toLowerCase()}?

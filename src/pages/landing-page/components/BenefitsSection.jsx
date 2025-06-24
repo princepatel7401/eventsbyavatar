@@ -53,7 +53,7 @@ const BenefitsSection = () => {
         value: "25%",
         label: "Average Cost Savings",
         detail:
-          "Clients save on average ₹2-5 lakhs through our vendor relationships",
+          "Clients save on average of 25% through our vendor relationships",
       },
       features: [
         "Transparent pricing breakdown",

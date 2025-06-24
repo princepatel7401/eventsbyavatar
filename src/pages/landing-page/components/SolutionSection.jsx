@@ -171,14 +171,14 @@ const SolutionSection = () => {
                     {services[activeService].recentProject.title}
                   </h4>
                   <div className="grid grid-cols-2 gap-4 text-sm text-text-secondary">
-                    <div>
+                    {/* <div>
                       <Icon
                         name="DollarSign"
                         size={16}
                         className="inline mr-1"
                       />
                       {services[activeService].recentProject.budget}
-                    </div>
+                    </div> */}
                     <div>
                       <Icon
                         name="Users"

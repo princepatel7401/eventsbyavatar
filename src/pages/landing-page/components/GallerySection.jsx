@@ -199,14 +199,14 @@ const GallerySection = () => {
                         </span>
                       </div>
                       <div className="flex items-center justify-between mt-2 text-sm">
-                        <span className="flex items-center">
+                        {/* <span className="flex items-center">
                           <Icon
                             name="DollarSign"
                             size={14}
                             className="mr-1"
                           />
                           {image.budgetRange}
-                        </span>
+                        </span> */}
                         <span className="flex items-center">
                           <Icon
                             name="Users"

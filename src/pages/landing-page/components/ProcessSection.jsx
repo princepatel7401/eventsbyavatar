@@ -466,7 +466,7 @@ const ProcessSection = () => {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <div className="bg-accent-100 rounded-xl p-6 max-w-2xl mx-auto border border-accent-200">
+          <div className="bg-primary-100 rounded-xl p-6 max-w-2xl mx-auto border border-primary-200">
             <h3 className="text-xl font-semibold text-text-primary mb-4">
               Ready to Start Your Event Journey?
             </h3>
