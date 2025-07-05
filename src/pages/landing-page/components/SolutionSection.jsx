@@ -21,12 +21,12 @@ const SolutionSection = () => {
         "Guest accommodation",
       ],
       recentProject: {
-        title: "Anand & Priya's Royal Wedding",
+        title: "Wedding Season - Coming Soon",
         image:
           "https://images.pexels.com/photos/1729799/pexels-photo-1729799.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
-        budget: "₹12-15 lakhs",
-        guests: "500 guests",
-        venue: "Heritage Hotel, Ahmedabad",
+        budget: "Coming Soon",
+        guests: "Planning Phase",
+        venue: "Wedding Season 2024-25",
       },
       color: "bg-pink-100 text-pink-600",
     },
@@ -44,12 +44,12 @@ const SolutionSection = () => {
         "Brand activations",
       ],
       recentProject: {
-        title: "TechCorp Annual Conference",
+        title: "Corporate Events - Coming Soon",
         image:
           "https://images.pixabay.com/photo/2017/07/21/23/57/concert-2527495_1920.jpg",
-        budget: "₹8-12 lakhs",
-        guests: "300 attendees",
-        venue: "Convention Center, SG Highway",
+        budget: "Coming Soon",
+        guests: "Planning Phase",
+        venue: "Corporate Season 2024",
       },
       color: "bg-blue-100 text-blue-600",
     },
@@ -67,12 +67,12 @@ const SolutionSection = () => {
         "Retirement parties",
       ],
       recentProject: {
-        title: "Mehta Family 25th Anniversary",
+        title: "Social Events - Coming Soon",
         image:
           "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&h=600",
-        budget: "₹3-6 lakhs",
-        guests: "150 guests",
-        venue: "Private Farmhouse, Sanand",
+        budget: "Coming Soon",
+        guests: "Planning Phase",
+        venue: "Year-Round Availability",
       },
       color: "bg-green-100 text-green-600",
     },
@@ -86,12 +86,12 @@ const SolutionSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-display-2 text-text-primary mb-6">
-            Comprehensive Event Solutions
-            <span className="block text-primary">Tailored for Ahmedabad</span>
+            Upcoming Event Solutions
+            <span className="block text-primary">Planning for Wedding Season</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-            From intimate gatherings to grand celebrations, we handle every
-            detail with local expertise and professional excellence.
+            We're preparing comprehensive event packages for the upcoming wedding season and corporate events.
+            Get ready for exceptional planning experiences.
           </p>
         </div>
 
@@ -167,7 +167,7 @@ const SolutionSection = () => {
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                   <h4 className="text-xl font-semibold text-text-primary mb-2">
-                    Recent Project:{" "}
+                    Planning Phase:{" "}
                     {services[activeService].recentProject.title}
                   </h4>
                   <div className="grid grid-cols-2 gap-4 text-sm text-text-secondary">

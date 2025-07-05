@@ -23,7 +23,7 @@ const LandingPage = () => {
         <title>Avatar Events</title>
         <meta
           name="description"
-          content="Ahmedabad's trusted event planners with 500+ successful celebrations. Expert wedding planning, corporate events & social functions with exclusive vendor partnerships."
+          content="Ahmedabad's trusted event planners with 500+ successful celebrations. Expert wedding planning, corporate events & social functions."
         />
         <meta
           name="keywords"
@@ -35,7 +35,7 @@ const LandingPage = () => {
         />
         <meta
           property="og:description"
-          content="Stress-free event planning with 500+ successful celebrations and exclusive vendor partnerships in Ahmedabad."
+          content="Stress-free event planning with 500+ successful celebrations in Ahmedabad."
         />
         <meta
           property="og:type"

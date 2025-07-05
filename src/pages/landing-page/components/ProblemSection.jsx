@@ -88,11 +88,11 @@ const ProblemSection = () => {
               <div className="bg-white rounded-xl p-8 shadow-custom-lg hover:shadow-custom-xl transition-shadow duration-300 h-full">
                 <div className="text-center mb-6">
                   <div
-                    className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-error-100 ${problem.color} mb-4`}
+                    className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-error-100 ${problem.color} mb-4`}
                   >
                     <Icon
                       name={problem.icon}
-                      size={32}
+                      size={24}
                     />
                   </div>
                   <h3 className="text-2xl font-display font-bold text-text-primary mb-3">
@@ -124,13 +124,8 @@ const ProblemSection = () => {
             className="bg-primary-100
  rounded-lg p-6 max-w-2xl mx-auto border border-warning-200"
           >
-            <div className="flex items-center justify-center mb-4">
-              <Icon
-                name="Clock"
-                size={24}
-                className="text-primary-500 mr-2"
-              />
-              <span className="text-lg font-semibold text-text-primary">
+            <div className="flex items-center mb-4">
+              <span className="text-lg font-semibold text-text-primary align-middle">
                 Don't waste months planning what we can perfect in weeks
               </span>
             </div>

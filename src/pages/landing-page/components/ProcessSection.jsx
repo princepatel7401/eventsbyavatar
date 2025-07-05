@@ -382,12 +382,12 @@ const ProcessSection = () => {
                 Previous
               </button>
 
-              <div className="flex space-x-2">
+              <div className="flex space-x-1 sm:space-x-2">
                 {processSteps.map((_, index) => (
-                  <button
+                  <div
                     key={index}
                     onClick={() => setActiveStep(index)}
-                    className={`w-3 h-3 rounded-full ${
+                    className={`w-5 h-5 rounded-full ${
                       index === activeStep ? "bg-primary" : "bg-surface-200"
                     }`}
                   />

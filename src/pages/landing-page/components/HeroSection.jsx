@@ -99,7 +99,6 @@ const HeroSection = () => {
               <span className="font-semibold text-accent">
                 10+ successful celebrations
               </span>{" "}
-              and exclusive vendor partnerships
             </p>
 
             {/* CTAs */}
@@ -170,7 +169,7 @@ const HeroSection = () => {
                       className="sm:w-7 sm:h-7"
                     />
                     <span className="text-2xl sm:text-3xl font-bold ml-2">
-                      8+
+                      2+
                     </span>
                   </div>
                   <p className="text-xs sm:text-sm text-gray-200">
@@ -191,18 +190,7 @@ const HeroSection = () => {
         />
       </div>
 
-      {/* Slide Indicators */}
-      <div className="absolute bottom-12 sm:bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {heroImages.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-200 ${
-              index === currentSlide ? "bg-accent" : "bg-white/50"
-            }`}
-          />
-        ))}
-      </div>
+
     </section>
   );
 };

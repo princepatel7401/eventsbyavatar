@@ -118,75 +118,7 @@ const EventTypesSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center">
             {/* Before/After Gallery */}
-            <div className="space-y-4 sm:space-y-6">
-              <h3 className="text-xl sm:text-2xl font-display font-bold text-text-primary">
-                Before & After Transformation
-              </h3>
 
-              <div className="grid grid-cols-2 gap-3 sm:gap-4">
-                <div className="space-y-1 sm:space-y-2">
-                  <p className="text-xs sm:text-sm font-semibold text-text-secondary uppercase tracking-wide">
-                    Before
-                  </p>
-                  <div className="relative overflow-hidden rounded-lg">
-                    <AppImage
-                      src={eventTypes[selectedType].beforeImage}
-                      alt={`${eventTypes[selectedType].title} before`}
-                      className="w-full h-32 sm:h-48 object-cover filter grayscale"
-                    />
-                    <div className="absolute inset-0 bg-black/20" />
-                  </div>
-                </div>
-
-                <div className="space-y-1 sm:space-y-2">
-                  <p className="text-xs sm:text-sm font-semibold text-primary uppercase tracking-wide">
-                    After
-                  </p>
-                  <div className="relative overflow-hidden rounded-lg">
-                    <AppImage
-                      src={eventTypes[selectedType].afterImage}
-                      alt={`${eventTypes[selectedType].title} after`}
-                      className="w-full h-32 sm:h-48 object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Key Info */}
-              <div className="grid grid-cols-2 gap-3 sm:gap-4">
-                <div className="bg-white p-3 sm:p-4 rounded-lg border border-border">
-                  {/* <div className="flex items-center mb-1 sm:mb-2">
-                    <Icon
-                      name="DollarSign"
-                      size={16}
-                      className="sm:w-5 sm:h-5 text-accent mr-1 sm:mr-2"
-                    />
-                    <span className="font-semibold text-text-primary text-sm sm:text-base">
-                      Budget Range
-                    </span>
-                  </div> */}
-                  <p className="text-base sm:text-lg font-bold text-primary">
-                    {eventTypes[selectedType].budgetRange}
-                  </p>
-                </div>
-
-                <div className="bg-white p-3 sm:p-4 rounded-lg border border-border">
-                  <div className="flex items-center mb-1 sm:mb-2">
-                    <Icon
-                      name="Clock"
-                      size={16}
-                      className="sm:w-5 sm:h-5 text-accent mr-1 sm:mr-2"
-                    />
-                    <span className="font-semibold text-text-primary text-sm sm:text-base">
-                      Timeline
-                    </span>
-                  </div>
-                  <p className="text-base sm:text-lg font-bold text-primary">
-                    {eventTypes[selectedType].timeline}
-                  </p>
-                </div>
-              </div>
-            </div>
 
             {/* Features & Testimonial */}
             <div className="space-y-4 sm:space-y-8">
