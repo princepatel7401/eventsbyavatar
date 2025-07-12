@@ -31,7 +31,7 @@ const LandingPage = () => {
         />
         <meta
           property="og:title"
-          content="EventCraft Ahmedabad - Your Dream Event, Perfectly Executed"
+          content="Avatar Events Ahmedabad - Your Dream Event, Perfectly Executed"
         />
         <meta
           property="og:description"

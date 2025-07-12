@@ -111,7 +111,7 @@ const ComingSoonPage = () => {
   return (
     <>
       <Helmet>
-        <title>Coming Soon - EventCraft Ahmedabad</title>
+        <title>Coming Soon - Avatar Events Ahmedabad</title>
         <meta
           name="description"
           content="Exciting new projects coming soon! Focus on wedding season and corporate events. Stay tuned for our latest event planning solutions."

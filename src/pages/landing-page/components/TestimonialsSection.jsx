@@ -16,7 +16,7 @@ const TestimonialsSection = () => {
       image:
         "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "EventCraft made our dream wedding come true! From the initial consultation to the last dance, every detail was perfectly executed. Their team understood our vision and brought it to life with such creativity and professionalism.",
+      text: "Avatar Events made our dream wedding come true! From the initial consultation to the last dance, every detail was perfectly executed. Their team understood our vision and brought it to life with such creativity and professionalism.",
       eventDetails: {
         type: "Traditional Gujarati Wedding",
         guests: 500,
@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
       image:
         "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "Our annual conference was a huge success thanks to EventCraft. They handled 300+ attendees flawlessly, managed all technical requirements, and even helped us secure additional sponsorships. Truly professional service.",
+      text: "Our annual conference was a huge success thanks to Avatar Events. They handled 300+ attendees flawlessly, managed all technical requirements, and even helped us secure additional sponsorships. Truly professional service.",
       eventDetails: {
         type: "Corporate Conference",
         guests: 300,
@@ -62,7 +62,7 @@ const TestimonialsSection = () => {
       image:
         "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "For our silver jubilee celebration, EventCraft created an atmosphere that brought tears of joy to our eyes. The attention to detail, from the photo displays to the music selection, made it truly memorable for our entire family.",
+      text: "For our silver jubilee celebration, Avatar Events created an atmosphere that brought tears of joy to our eyes. The attention to detail, from the photo displays to the music selection, made it truly memorable for our entire family.",
       eventDetails: {
         type: "Anniversary Party",
         guests: 150,
@@ -85,7 +85,7 @@ const TestimonialsSection = () => {
       image:
         "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "Our product launch event exceeded all expectations. EventCraft not only managed the logistics perfectly but also contributed creative ideas that enhanced our brand presentation. The ROI was exceptional.",
+      text: "Our product launch event exceeded all expectations. Avatar Events not only managed the logistics perfectly but also contributed creative ideas that enhanced our brand presentation. The ROI was exceptional.",
       eventDetails: {
         type: "Product Launch",
         guests: 200,

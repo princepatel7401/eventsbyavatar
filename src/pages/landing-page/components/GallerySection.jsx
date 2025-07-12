@@ -283,7 +283,7 @@ const GallerySection = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <Icon
                       name="DollarSign"
                       size={20}
@@ -297,7 +297,7 @@ const GallerySection = () => {
                         {selectedImage.budgetRange}
                       </p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-center">
                     <Icon

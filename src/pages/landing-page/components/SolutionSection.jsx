@@ -7,29 +7,7 @@ const SolutionSection = () => {
   const [activeService, setActiveService] = useState(0);
 
   const services = [
-    {
-      id: "weddings",
-      title: "Weddings",
-      icon: "Heart",
-      description:
-        "Traditional & destination weddings with complete cultural authenticity",
-      capabilities: [
-        "Venue selection & decoration",
-        "Catering & menu planning",
-        "Photography & videography",
-        "Entertainment & music",
-        "Guest accommodation",
-      ],
-      recentProject: {
-        title: "Wedding Season - Coming Soon",
-        image:
-          "https://images.pexels.com/photos/1729799/pexels-photo-1729799.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
-        budget: "Coming Soon",
-        guests: "Planning Phase",
-        venue: "Wedding Season 2024-25",
-      },
-      color: "bg-pink-100 text-pink-600",
-    },
+
     {
       id: "corporate",
       title: "Corporate Events",
@@ -52,6 +30,29 @@ const SolutionSection = () => {
         venue: "Corporate Season 2024",
       },
       color: "bg-blue-100 text-blue-600",
+    },
+     {
+      id: "weddings",
+      title: "Weddings",
+      icon: "Heart",
+      description:
+        "Traditional & destination weddings with complete cultural authenticity",
+      capabilities: [
+        "Venue selection & decoration",
+        "Catering & menu planning",
+        "Photography & videography",
+        "Entertainment & music",
+        "Guest accommodation",
+      ],
+      recentProject: {
+        title: "Wedding Season - Coming Soon",
+        image:
+          "https://images.pexels.com/photos/1729799/pexels-photo-1729799.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+        budget: "Coming Soon",
+        guests: "Planning Phase",
+        venue: "Wedding Season 2024-25",
+      },
+      color: "bg-pink-100 text-pink-600",
     },
     {
       id: "social",
@@ -93,7 +94,8 @@ const SolutionSection = () => {
             We're preparing comprehensive event packages for the upcoming wedding season and corporate events.
             Get ready for exceptional planning experiences.
           </p>
-        </div>
+        </div>Our Event
+Gallery
 
         {/* Interactive Service Wheel */}
         <div className="max-w-6xl mx-auto">

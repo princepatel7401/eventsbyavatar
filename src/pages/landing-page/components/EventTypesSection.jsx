@@ -18,7 +18,7 @@ const EventTypesSection = () => {
         "https://images.pexels.com/photos/1729799/pexels-photo-1729799.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       testimonial: {
         name: "Priya & Anand Patel",
-        text: "EventCraft turned our dream wedding into reality. Every detail was perfect!",
+        text: "Avatar Events turned our dream wedding into reality. Every detail was perfect!",
         rating: 5,
       },
       features: [
@@ -62,7 +62,7 @@ const EventTypesSection = () => {
         "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=400&h=300",
       testimonial: {
         name: "Mehta Family",
-        text: "Our 25th anniversary celebration was magical thanks to EventCraft team.",
+        text: "Our 25th anniversary celebration was magical thanks to Avatar Events team.",
         rating: 5,
       },
       features: [

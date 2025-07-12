@@ -127,7 +127,7 @@ Guests: ${getValues("guestCount") || "Not specified"}`;
               </h2>
 
               <p className="text-lg text-text-secondary mb-6">
-                Thank you for choosing EventCraft Ahmedabad. We've received your
+                Thank you for choosing Avatar Events Ahmedabad. We've received your
                 consultation request and will contact you within 2 hours to
                 schedule your session.
               </p>
@@ -685,7 +685,7 @@ Guests: ${getValues("guestCount") || "Not specified"}`;
               {/* Trust Indicators */}
               <div className="bg-white rounded-2xl p-6 shadow-custom border border-border">
                 <h3 className="text-lg font-semibold text-text-primary mb-4">
-                  Why Trust EventCraft?
+                  Why Trust Avatar Events?
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-center">

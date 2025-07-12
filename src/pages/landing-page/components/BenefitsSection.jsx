@@ -92,7 +92,7 @@ const BenefitsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-display-2 text-text-primary mb-6">
-            Why Choose EventCraft?
+            Why Choose Avatar Events?
             <span className="block text-primary">Proven Benefits</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
@@ -204,7 +204,7 @@ const BenefitsSection = () => {
           <div className="bg-white rounded-xl shadow-custom-lg overflow-hidden border border-border">
             <div className="bg-primary text-white p-6 text-center">
               <h3 className="text-2xl font-display font-bold">
-                Self-Planning vs EventCraft Planning
+                Self-Planning vs Avatar Events Planning
               </h3>
             </div>
 
@@ -261,7 +261,7 @@ const BenefitsSection = () => {
                 {/* With EventCraft Column */}
                 <div className="text-center min-w-[30%] flex-shrink-0">
                   <h4 className="font-semibold text-success mb-4">
-                    With EventCraft
+                    With Avatar Events
                   </h4>
                   <div className="space-y-3">
                     <div className="p-3 bg-success-50 border border-success-200 rounded-lg text-success text-sm">
