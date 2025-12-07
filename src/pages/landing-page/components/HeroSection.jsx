@@ -11,16 +11,20 @@ const HeroSection = () => {
 
   const heroImages = [
     {
-      src: "https://images.pexels.com/photos/1729799/pexels-photo-1729799.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+      src: "/images/Eventsbyavatar/b05888a1-8a92-4f3c-bd01-437c798ac7bb.jpg",
+      alt: "Grand Wedding Event",
+    },
+    {
+      src: "/images/Eventsbyavatar/166285df-1a25-440e-959a-5e72d13dac3a.jpg",
+      alt: "Elegant Wedding Setup",
+    },
+    {
+      src: "/images/Eventsbyavatar/IMG_0404.JPG",
       alt: "Luxury Wedding Reception",
     },
     {
-      src: "https://images.pixabay.com/photo/2017/07/15/10/34/wedding-2505493_1920.jpg",
-      alt: "Corporate Event Setup",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1920&h=1080",
-      alt: "Traditional Indian Wedding",
+      src: "/images/Eventsbyavatar/040A4888.jpeg",
+      alt: "Beautiful Wedding Celebration",
     },
   ];
 

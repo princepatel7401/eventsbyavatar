@@ -23,9 +23,9 @@ const SolutionSection = () => {
         "Brand activations",
       ],
       recentProject: {
-        title: "Corporate Events - Coming Soon",
+        title: "Corporate Events",
         image:
-          "https://images.pixabay.com/photo/2017/07/21/23/57/concert-2527495_1920.jpg",
+          "/images/Eventsbyavatar/IMG_9097.JPG",
         budget: "Coming Soon",
         guests: "Planning Phase",
         venue: "Corporate Season 2024",
@@ -46,9 +46,9 @@ const SolutionSection = () => {
         "Guest accommodation",
       ],
       recentProject: {
-        title: "Wedding Season - Coming Soon",
+        title: "Wedding Season",
         image:
-          "https://images.pexels.com/photos/1729799/pexels-photo-1729799.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+          "/images/Eventsbyavatar/b05888a1-8a92-4f3c-bd01-437c798ac7bb.jpg",
         budget: "Coming Soon",
         guests: "Planning Phase",
         venue: "Wedding Season 2024-25",
@@ -69,9 +69,9 @@ const SolutionSection = () => {
         "Retirement parties",
       ],
       recentProject: {
-        title: "Social Events - Coming Soon",
+        title: "Social Events",
         image:
-          "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&h=600",
+          "/images/Eventsbyavatar/ce0dd0c1-0c8c-4659-b961-318772835465.jpg",
         budget: "Coming Soon",
         guests: "Planning Phase",
         venue: "Year-Round Availability",
@@ -95,8 +95,7 @@ const SolutionSection = () => {
             We're preparing comprehensive event packages for the upcoming wedding season and corporate events.
             Get ready for exceptional planning experiences.
           </p>
-        </div>Our Event
-Gallery
+        </div>
 
         {/* Interactive Service Wheel */}
         <div className="max-w-6xl mx-auto">
@@ -170,7 +169,6 @@ Gallery
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                   <h4 className="text-xl font-semibold text-text-primary mb-2">
-                    Planning Phase:{" "}
                     {services[activeService].recentProject.title}
                   </h4>
                   <div className="grid grid-cols-2 gap-4 text-sm text-text-secondary">
