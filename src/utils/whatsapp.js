@@ -7,7 +7,8 @@ const WHATSAPP_NUMBER = "9328822686"; // Your WhatsApp number
  */
 export const openWhatsApp = (message = "Hi! I would like to know more about Avatar Events.") => {
   const encodedMessage = encodeURIComponent(message);
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`, "_blank");
+  // Use window.location.href to open in same tab, so users can navigate back to the site
+  window.location.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
 };
 
 /**
