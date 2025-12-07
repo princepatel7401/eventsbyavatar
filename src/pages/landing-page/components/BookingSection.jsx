@@ -688,6 +688,16 @@ Guests: ${getValues("guestCount") || "Not specified"}`;
                   Why Trust Avatar Events?
                 </h3>
                 <div className="space-y-3">
+                <div className="flex items-center">
+                    <Icon
+                      name="FileText"
+                      size={16}
+                      className="text-success mr-2"
+                    />
+                    <span className="text-text-secondary text-sm">
+                      GST Registered Firm
+                    </span>
+                  </div>
                   <div className="flex items-center">
                     <Icon
                       name="Shield"
@@ -705,7 +715,7 @@ Guests: ${getValues("guestCount") || "Not specified"}`;
                       className="text-success mr-2"
                     />
                     <span className="text-text-secondary text-sm">
-                      No time commitment required
+                      effective and efficient planning
                     </span>
                   </div>
                   <div className="flex items-center">
@@ -725,9 +735,10 @@ Guests: ${getValues("guestCount") || "Not specified"}`;
                       className="text-success mr-2"
                     />
                     <span className="text-text-secondary text-sm">
-                      2+ years in Ahmedabad & Beyond
+                      1+ years in Ahmedabad & Beyond
                     </span>
                   </div>
+                  
                 </div>
               </div>
             </div>

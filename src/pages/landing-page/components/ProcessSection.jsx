@@ -6,6 +6,8 @@ const ProcessSection = () => {
   const [activeStep, setActiveStep] = useState(0);
   const [visibleSteps, setVisibleSteps] = useState([]);
   const sectionRef = useRef(null);
+  const touchStartX = useRef(null);
+  const touchEndX = useRef(null);
 
   const processSteps = [
     {
@@ -153,7 +155,6 @@ const ProcessSection = () => {
         "Vendor payment settlements",
         "Feedback collection",
         "Photo/video compilation",
-        "Thank you coordination",
       ],
       deliverables: [
         "Pristine venue return",
@@ -188,6 +189,33 @@ const ProcessSection = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  // Swipe handlers for mobile
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e) => {
+    touchEndX.current = null;
+    touchStartX.current = e.targetTouches[0].clientX;
+  };
+
+  const onTouchMove = (e) => {
+    touchEndX.current = e.targetTouches[0].clientX;
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStartX.current || !touchEndX.current) return;
+
+    const distance = touchStartX.current - touchEndX.current;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe && activeStep < processSteps.length - 1) {
+      setActiveStep(activeStep + 1);
+    }
+    if (isRightSwipe && activeStep > 0) {
+      setActiveStep(activeStep - 1);
+    }
+  };
 
   return (
     <section
@@ -262,9 +290,118 @@ const ProcessSection = () => {
             </div>
           </div>
 
-          {/* Step Details */}
-          <div className="bg-white rounded-2xl shadow-custom-lg p-8 border border-border">
+          {/* Step Details - Desktop */}
+          <div className="hidden lg:block bg-white rounded-2xl shadow-custom-lg p-8 border border-border">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mr-4">
+                    <Icon
+                      name={processSteps[activeStep].icon}
+                      size={24}
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-display font-bold text-text-primary">
+                      Step {processSteps[activeStep].id}:{" "}
+                      {processSteps[activeStep].title}
+                    </h3>
+                    <p className="text-text-secondary">
+                      {processSteps[activeStep].duration}
+                    </p>
+                  </div>
+                </div>
+
+                <p className="text-lg text-text-secondary mb-6 leading-relaxed">
+                  {processSteps[activeStep].description}
+                </p>
+
+                <div>
+                  <h4 className="font-semibold text-text-primary mb-4">
+                    What We Do:
+                  </h4>
+                  <ul className="space-y-2">
+                    {processSteps[activeStep].details.map((detail, index) => (
+                      <li
+                        key={index}
+                        className="flex items-start"
+                      >
+                        <Icon
+                          name="ArrowRight"
+                          size={16}
+                          className="text-primary mr-2 mt-1 flex-shrink-0"
+                        />
+                        <span className="text-text-secondary text-sm">
+                          {detail}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-text-primary mb-4">
+                    You'll Receive:
+                  </h4>
+                  <ul className="space-y-2">
+                    {processSteps[activeStep].deliverables.map(
+                      (deliverable, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start"
+                        >
+                          <Icon
+                            name="Check"
+                            size={16}
+                            className="text-success mr-2 mt-1 flex-shrink-0"
+                          />
+                          <span className="text-text-secondary text-sm">
+                            {deliverable}
+                          </span>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-text-primary mb-4">
+                    Your Part:
+                  </h4>
+                  <ul className="space-y-2">
+                    {processSteps[activeStep].clientActions.map(
+                      (action, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start"
+                        >
+                          <Icon
+                            name="User"
+                            size={16}
+                            className="text-accent mr-2 mt-1 flex-shrink-0"
+                          />
+                          <span className="text-text-secondary text-sm">
+                            {action}
+                          </span>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Step Details - Mobile (Swipeable) */}
+          <div
+            className="lg:hidden bg-white rounded-2xl shadow-custom-lg p-8 border border-border"
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+          >
+            <div className="grid grid-cols-1 gap-8">
               <div>
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mr-4">

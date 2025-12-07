@@ -64,7 +64,7 @@ const LandingPage = () => {
           <SolutionSection />
           <EventTypesSection />
           <GallerySection />
-          <TestimonialsSection />
+          {/* <TestimonialsSection /> */}
           <BenefitsSection />
           {/* <ServicePackagesSection /> */}
           <ProcessSection />

@@ -57,7 +57,6 @@ const BenefitsSection = () => {
       },
       features: [
         "Transparent pricing breakdown",
-        "Volume discount negotiations",
         "Cost-effective alternatives",
         "No hidden fees or markups",
       ],

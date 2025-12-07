@@ -116,12 +116,12 @@ const EventTypesSection = () => {
 
         {/* Selected Event Type Details */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center">
+          <div className="grid grid-cols-1 gap-6 sm:gap-12 items-center">
             {/* Before/After Gallery */}
 
 
             {/* Features & Testimonial */}
-            <div className="space-y-4 sm:space-y-8">
+            <div className="space-y-4 sm:space-y-8 lg:max-w-2xl lg:mx-auto">
               {/* Features */}
               <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-custom border border-border">
                 <h4 className="text-lg sm:text-xl font-semibold text-text-primary mb-3 sm:mb-4 flex items-center">
