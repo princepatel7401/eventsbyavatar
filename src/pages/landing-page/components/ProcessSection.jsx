@@ -613,10 +613,7 @@ const ProcessSection = () => {
               firsthand
             </p>
             <div className="flex justify-center">
-              <button
-                onClick={() => openWhatsApp(WhatsAppMessages.consultation)}
-                className="btn-accent flex items-cente text-lg"
-              >
+              <button className="btn-accent flex items-cente text-lg">
                 <Icon
                   name="Play"
                   size={20}
