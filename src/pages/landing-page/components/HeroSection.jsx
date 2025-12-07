@@ -132,7 +132,7 @@ const HeroSection = () => {
                 : "translate-y-10 opacity-0"
             }`}
           >
-            <div className="bg-white/10 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/20">
+            <div className="bg-white/5 sm:bg-white/10 sm:backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/20">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-center">
                 <div className="flex flex-col items-center py-2">
                   <div className="flex items-center text-accent mb-1 sm:mb-2">
