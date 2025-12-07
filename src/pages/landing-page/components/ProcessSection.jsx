@@ -1,6 +1,7 @@
 // src/pages/landing-page/components/ProcessSection.jsx
 import React, { useState, useEffect, useRef } from "react";
 import Icon from "../../../components/AppIcon";
+import { openWhatsApp, WhatsAppMessages } from "../../../utils/whatsapp";
 
 const ProcessSection = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -612,7 +613,10 @@ const ProcessSection = () => {
               firsthand
             </p>
             <div className="flex justify-center">
-              <button className="btn-accent flex items-cente text-lg">
+              <button
+                onClick={() => openWhatsApp(WhatsAppMessages.consultation)}
+                className="btn-accent flex items-cente text-lg"
+              >
                 <Icon
                   name="Play"
                   size={20}

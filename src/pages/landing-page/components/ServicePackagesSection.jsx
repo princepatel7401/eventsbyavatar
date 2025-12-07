@@ -1,6 +1,7 @@
 // /home/ubuntu/app/eventcraft_ahmedabad/src/pages/landing-page/components/ServicePackagesSection.jsx
 import React, { useState } from "react";
 import Icon from "../../../components/AppIcon";
+import { openWhatsApp, WhatsAppMessages } from "../../../utils/whatsapp";
 
 const ServicePackagesSection = () => {
   const [selectedPackage, setSelectedPackage] = useState(1); // Default to 'Most Popular'
@@ -343,7 +344,10 @@ const ServicePackagesSection = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                <button className="btn-accent py-2 sm:py-3 px-4 sm:px-6 text-sm sm:text-base">
+                <button
+                  onClick={() => openWhatsApp(WhatsAppMessages.consultation)}
+                  className="btn-accent py-2 sm:py-3 px-4 sm:px-6 text-sm sm:text-base"
+                >
                   <Icon
                     name="Calendar"
                     size={18}

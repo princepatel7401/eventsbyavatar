@@ -1,6 +1,7 @@
 // /home/ubuntu/app/eventcraft_ahmedabad/src/components/ui/Header.jsx
 import React, { useState, useEffect } from "react";
 import Icon from "../AppIcon";
+import { openWhatsApp, WhatsAppMessages } from "../../utils/whatsapp";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
@@ -104,7 +105,7 @@ const Header = () => {
             {/* CTA Button */}
             <div className="hidden md:flex items-center">
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => openWhatsApp(WhatsAppMessages.contact)}
                 className="btn-primary text-sm font-semibold px-4 py-2 sm:px-6 sm:py-3"
               >
                 Contact us
@@ -180,7 +181,7 @@ const Header = () => {
 
               <div className="mt-6 pt-4 sm:pt-6 border-t border-border">
                 <button
-                  onClick={() => scrollToSection("contact")}
+                  onClick={() => openWhatsApp(WhatsAppMessages.contact)}
                   className="w-full btn-primary text-center py-3"
                 >
                   Contact Us{" "}
@@ -188,7 +189,7 @@ const Header = () => {
 
                 <div className="mt-4 flex items-center justify-center space-x-4">
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+919328822686"
                     className="flex items-center space-x-2 text-text-secondary hover:text-primary transition-colors duration-200 p-2"
                   >
                     <Icon
@@ -197,8 +198,8 @@ const Header = () => {
                     />
                     <span className="text-sm">Call Now</span>
                   </a>
-                  <a
-                    href="https://wa.me/9193"
+                  <button
+                    onClick={() => openWhatsApp(WhatsAppMessages.contact)}
                     className="flex items-center space-x-2 text-text-secondary hover:text-success transition-colors duration-200 p-2"
                   >
                     <Icon
@@ -206,7 +207,7 @@ const Header = () => {
                       size={16}
                     />
                     <span className="text-sm">WhatsApp</span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </nav>

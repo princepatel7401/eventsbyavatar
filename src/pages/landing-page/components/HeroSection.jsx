@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Icon from "../../../components/AppIcon";
 import AppImage from "../../../components/AppImage";
+import { openWhatsApp, WhatsAppMessages } from "../../../utils/whatsapp";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -46,7 +47,7 @@ const HeroSection = () => {
   };
 
   const handleBookConsultation = () => {
-    scrollToSection("contact");
+    openWhatsApp(WhatsAppMessages.consultation);
   };
 
   const handleViewGallery = () => {

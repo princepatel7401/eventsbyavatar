@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import Icon from "../../../components/AppIcon";
+import { openWhatsApp } from "../../../utils/whatsapp";
 
 const BookingSection = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -101,8 +102,7 @@ Name: ${getValues("firstName")} ${getValues("lastName")}
 Event Type: ${getValues("eventType") || "Not specified"}
 Budget: ${getValues("estimatedBudget") || "Not specified"}
 Guests: ${getValues("guestCount") || "Not specified"}`;
-    const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/9328822686?text=${encodedMessage}`, "_blank");
+    openWhatsApp(message);
   };
 
   if (showThankYou) {

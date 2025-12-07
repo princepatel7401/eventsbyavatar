@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Icon from "../../../components/AppIcon";
 import AppImage from "../../../components/AppImage";
+import { openWhatsApp, WhatsAppMessages } from "../../../utils/whatsapp";
 
 const EventTypesSection = () => {
   const [selectedType, setSelectedType] = useState(0);
@@ -185,7 +186,10 @@ const EventTypesSection = () => {
                   Get a personalized quote and timeline for your event
                 </p>
                 <div className="flex justify-center">
-                  <button className="btn-accent py-2 sm:py-3 px-4 sm:px-6 flex items-center text-sm sm:text-base">
+                  <button
+                    onClick={() => openWhatsApp(WhatsAppMessages.quote(eventTypes[selectedType].title))}
+                    className="btn-accent py-2 sm:py-3 px-4 sm:px-6 flex items-center text-sm sm:text-base"
+                  >
                     <Icon
                       name="MessageCircle"
                       size={16}

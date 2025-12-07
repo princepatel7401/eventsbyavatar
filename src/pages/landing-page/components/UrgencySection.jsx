@@ -1,6 +1,7 @@
 // src/pages/landing-page/components/UrgencySection.jsx
 import React, { useState, useEffect } from "react";
 import Icon from "../../../components/AppIcon";
+import { openWhatsApp, WhatsAppMessages } from "../../../utils/whatsapp";
 
 const UrgencySection = () => {
   const [consultationSlots, setConsultationSlots] = useState(7);
@@ -89,17 +90,7 @@ const UrgencySection = () => {
   const seasonalInfo = getSeasonalMessage();
 
   const scrollToBooking = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      const headerHeight = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - headerHeight;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
+    openWhatsApp(WhatsAppMessages.consultation);
   };
 
   return (

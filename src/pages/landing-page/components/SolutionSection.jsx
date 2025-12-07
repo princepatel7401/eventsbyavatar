@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Icon from "../../../components/AppIcon";
 import AppImage from "../../../components/AppImage";
+import { openWhatsApp, WhatsAppMessages } from "../../../utils/whatsapp";
 
 const SolutionSection = () => {
   const [activeService, setActiveService] = useState(0);
@@ -224,7 +225,10 @@ Gallery
                 </div>
 
                 <div className="mt-6 pt-6 border-t border-border">
-                  <button className="btn-primary w-full flex items-center justify-center">
+                  <button
+                    onClick={() => openWhatsApp(WhatsAppMessages.quote(services[activeService].title))}
+                    className="btn-primary w-full flex items-center justify-center"
+                  >
                     <Icon
                       name="ArrowRight"
                       size={20}

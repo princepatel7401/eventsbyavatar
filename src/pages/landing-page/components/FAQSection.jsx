@@ -1,6 +1,7 @@
 // src/pages/landing-page/components/FAQSection.jsx
 import React, { useState } from "react";
 import Icon from "../../../components/AppIcon";
+import { openWhatsApp, WhatsAppMessages } from "../../../utils/whatsapp";
 
 const FAQSection = () => {
   const [expandedFaq, setExpandedFaq] = useState(null);
@@ -338,7 +339,10 @@ const FAQSection = () => {
                 answers
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="btn-primary flex items-center">
+                <button
+                  onClick={() => openWhatsApp(WhatsAppMessages.chat)}
+                  className="btn-primary flex items-center"
+                >
                   <Icon
                     name="MessageCircle"
                     size={20}
@@ -346,7 +350,10 @@ const FAQSection = () => {
                   />
                   Chat with Expert
                 </button>
-                <button className="btn-outline flex items-center">
+                <button
+                  onClick={() => openWhatsApp(WhatsAppMessages.scheduleCall)}
+                  className="btn-outline flex items-center"
+                >
                   <Icon
                     name="Phone"
                     size={20}
@@ -354,7 +361,10 @@ const FAQSection = () => {
                   />
                   Schedule Call
                 </button>
-                <button className="btn-ghost flex items-center">
+                <button
+                  onClick={() => openWhatsApp(WhatsAppMessages.emailQuestions)}
+                  className="btn-ghost flex items-center"
+                >
                   <Icon
                     name="Mail"
                     size={20}

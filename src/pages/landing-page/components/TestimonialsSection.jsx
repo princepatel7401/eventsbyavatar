@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Icon from "../../../components/AppIcon";
 import AppImage from "../../../components/AppImage";
+import { openWhatsApp, WhatsAppMessages } from "../../../utils/whatsapp";
 
 const TestimonialsSection = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -359,7 +360,10 @@ const TestimonialsSection = () => {
               together
             </p>
             <div className="flex justify-center">
-              <button className="btn-accent text-lg flex items-center">
+              <button
+                onClick={() => openWhatsApp(WhatsAppMessages.consultation)}
+                className="btn-accent text-lg flex items-center"
+              >
                 <Icon
                   name="Calendar"
                   size={20}

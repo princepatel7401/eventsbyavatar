@@ -1,6 +1,7 @@
 // /home/ubuntu/app/eventcraft_ahmedabad/src/components/ui/StickyCtaBar.jsx
 import React, { useState, useEffect } from "react";
 import Icon from "../AppIcon";
+import { openWhatsApp, WhatsAppMessages } from "../../utils/whatsapp";
 
 const StickyCtaBar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -52,7 +53,7 @@ const StickyCtaBar = () => {
   };
 
   const handleCtaClick = () => {
-    scrollToSection("contact");
+    openWhatsApp(WhatsAppMessages.contact);
   };
 
   const handleCallClick = () => {
@@ -60,10 +61,7 @@ const StickyCtaBar = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open(
-      "https://wa.me/9328822686?text=Hi! I would like to book a consultation for my event.",
-      "_blank"
-    );
+    openWhatsApp(WhatsAppMessages.consultation);
   };
 
   if (!isVisible) return null;
